@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>去旅游售票网</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}"/>
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/common.css}" rel="stylesheet" type="text/css"/>
+    <script th:src="@{/layui/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{/layui/layui.js}"></script>
+    <style>
+        img {
+            display: inline-block;
+            border: none;
+            width: 260px;
+            height: 160px;
+        }
+        .product_title {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        .layui-carousel {
+            position: relative;
+            left: 0;
+            top: 0;
+            background-color: #f2f2f2;
+            /* text-align: center; */
+            margin-left: 190px;
+        }
+    </style>
+    <script src="../../static/layui/layui.js"></script>
+</head>
+<body class="site-home" id="body">
+<!--包含 头部模块-->
+<div th:replace="mall/common::head"></div>
+
+<!-- 条目中可以是任意内容，如：<img src=""> -->
+
+
+
+<script th:src="@{/layui/layui.js}" type="text/javascript"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+    layui.use(['carousel', 'form'], function(){
+        var carousel = layui.carousel
+            ,form = layui.form;
+
+        //常规轮播
+        carousel.render({
+            elem: '#test1'
+            ,arrow: 'always'
+        });
+
+        //改变下时间间隔、动画类型、高度
+        carousel.render({
+            elem: '#test2'
+            ,interval: 1800
+            ,anim: 'fade'
+            ,height: '120px'
+        });
+
+        //设定各种参数
+        var ins3 = carousel.render({
+            elem: '#test3'
+        });
+        //图片轮播
+        carousel.render({
+            elem: '#test10'
+            ,width: '1140px'
+            ,height: '300px'
+            ,interval: 5000
+        });
+
+        //事件
+        carousel.on('change(test4)', function(res){
+            console.log(res)
+        });
+
+        var $ = layui.$, active = {
+            set: function(othis){
+                var THIS = 'layui-bg-normal'
+                    ,key = othis.data('key')
+                    ,options = {};
+
+                othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+                options[key] = othis.data('value');
+                ins3.reload(options);
+            }
+        };
+
+        //监听开关
+        form.on('switch(autoplay)', function(){
+            ins3.reload({
+                autoplay: this.checked
+            });
+        });
+
+        $('.demoSet').on('keyup', function(){
+            var value = this.value
+                ,options = {};
+            if(!/^\d+$/.test(value)) return;
+
+            options[this.name] = value;
+            ins3.reload(options);
+        });
+
+        //其它示例
+        $('.demoTest .layui-btn').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+    });
+</script>
+
+
+
+<!--页面主体内容-->
+<div class="layui-container" id="content">
+
+
+
+    <input readOnly="true" style="border: none;background: #f5f5f5;" class="site-h1" id="level2" th:value="${level}" type="text" />
+
+    <div class="layui-row" id="product_hot">
+
+    </div>
+
+    <script>
+        //            <![CDATA[
+        var pageNo = 0;
+        $(function () {
+            //加载热门商品
+            loadHot();
+            //加载最新商品
+            loadNew(pageNo);
+        });
+
+        function loadHot() {
+            var value = document.getElementById("level2").value;
+            $.get("level.do?level="+value, function (data) {
+                if (data.state == 0) {
+                    var div = $("#product_hot");
+                    appendToPage(div, data.data);
+                } else {
+                    layer.msg("请求失败！")
+                }
+            });
+        }
+        function loadNew(pageindex) {
+            $.get("product/new.do?pageSize=12&pageNo=" + pageindex, function (data) {
+                layer.closeAll();
+                if (data.state == 0) {
+                    pageNo++;
+                    var div = $("#product_new");
+                    if ((!data.data || data.data.length <= 0) && pageNo > 0) {
+                        layer.msg("没有更多了");
+                    }
+                    appendToPage(div, data.data);
+                } else {
+                    layer.msg("请求失败！")
+                }
+            });
+
+        }
+        //加载更多
+        function more() {
+            var load = layer.load();
+            loadNew(pageNo);
+        }
+        function jump(){
+            var G=document.getElementById('mc').value;
+
+            $.ajax({
+                type: "post",
+                url: "product/chaxun",
+                data: {"name": G},
+                success: function (data) {
+                    if (data.state == 0) {
+                        var div = $("#product_sea");
+                        appendToPage(div, data.data);
+                    } else {
+                        layer.msg("请求失败！")
+                    }
+                }
+            });
+        }
+
+
+        // 将数据渲染到页面上
+        function appendToPage(div, data) {
+            $(data).each(function (index, item) {
+                var productDiv = $("<div class='layui-col-md3 layui-col-xs6'></div>");
+                var conetDiv = $("<div class='card layui-anim layui-anim-scale'></div>");
+                productDiv.append(conetDiv);
+                var imgdiv = $("<div class='product_image'><a href='/mall/product/get.html?id="+item.id+"'><img src=" + item.image + "></a></div>");
+                conetDiv.append(imgdiv);
+                conetDiv.append($("<div class='product_title' style='align-content: center '>" + item.title + "</div>"));
+                div.append(productDiv);
+            });
+        }
+
+        //            ]]>
+    </script>
+</div>
+<!--底部-->
+<div th:replace="mall/common::foot"></div>
+</body>
+</html>

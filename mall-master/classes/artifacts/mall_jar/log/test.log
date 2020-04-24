@@ -1,0 +1,210 @@
+10:32:42.429 INFO  org.springframework.boot.StartupInfoLogger 48 logStarting - Starting MallApplication on Pokemun-Master with PID 9496 (C:\Users\86180\Desktop\2020.13.2\mall-master\classes\artifacts\mall_jar\mall.jar started by 86180 in C:\Users\86180\Desktop\2020.13.2\mall-master\classes\artifacts\mall_jar)
+10:32:42.448 DEBUG org.springframework.boot.StartupInfoLogger 51 logStarting - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+10:32:42.448 INFO  org.springframework.boot.SpringApplication 593 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+10:32:43.058 INFO  org.hibernate.validator.internal.util.Version 30 <clinit> - HV000001: Hibernate Validator 5.3.5.Final
+10:32:43.173 INFO  org.springframework.context.support.AbstractApplicationContext 583 prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158d79f7: startup date [Fri Apr 24 10:32:43 CST 2020]; root of context hierarchy
+10:32:46.222 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 327 postProcessAfterInitialization - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:32:51.330 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer 89 initialize - Tomcat initialized with port(s): 80 (http)
+10:32:51.353 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Starting service [Tomcat]
+10:32:51.355 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Starting Servlet Engine: Apache Tomcat/8.5.23
+10:32:51.653 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Initializing Spring embedded WebApplicationContext
+10:32:51.654 INFO  org.springframework.boot.context.embedded.EmbeddedWebApplicationContext 276 prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 8485 ms
+10:32:52.430 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean 190 onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+10:32:52.433 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean 190 onStartup - Mapping servlet: 'statViewServlet' to [/druid/*]
+10:32:52.436 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 258 configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:32:52.438 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 258 configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:32:52.438 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 258 configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:32:52.438 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 258 configure - Mapping filter: 'requestContextFilter' to: [/*]
+10:32:52.438 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 271 configure - Mapping filter: 'webStatFilter' to urls: [/*]
+10:32:52.439 INFO  org.springframework.boot.web.servlet.AbstractFilterRegistrationBean 258 configure - Mapping filter: 'priv.jesse.mall.filter.AuthorizationFilter' to: [/*]
+10:32:54.968 INFO  com.alibaba.druid.pool.DruidDataSource 889 init - {dataSource-1} inited
+10:32:55.094 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 349 createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+10:32:55.121 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10:32:55.354 INFO  org.hibernate.Version 37 logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+10:32:55.356 INFO  org.hibernate.cfg.Environment 213 <clinit> - HHH000206: hibernate.properties not found
+10:32:55.358 INFO  org.hibernate.cfg.Environment 317 buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+10:32:55.442 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager 66 <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10:32:55.995 INFO  org.hibernate.dialect.Dialect 156 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:32:56.922 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate 105 execute - HHH000228: Running hbm2ddl schema update
+10:32:57.378 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 379 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:32:58.821 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter 534 initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158d79f7: startup date [Fri Apr 24 10:32:43 CST 2020]; root of context hierarchy
+10:32:58.921 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/add.do],methods=[POST]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminClassificationController.add(java.lang.String,int,int)
+10:32:58.924 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/update.do],methods=[POST]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminClassificationController.update(int,java.lang.String,int,int)
+10:32:58.925 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/getTotal.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Integer> priv.jesse.mall.web.admin.AdminClassificationController.getTotal(int)
+10:32:58.926 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/list2.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Classification>> priv.jesse.mall.web.admin.AdminClassificationController.findAll(int)
+10:32:58.926 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/list.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Classification>> priv.jesse.mall.web.admin.AdminClassificationController.findAll(int,int,int)
+10:32:58.926 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/toList.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminClassificationController.toList(int)
+10:32:58.927 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/toAdd.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminClassificationController.toAdd(int)
+10:32:58.927 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/del.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminClassificationController.del(int)
+10:32:58.928 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/getall.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> priv.jesse.mall.web.admin.AdminClassificationController.listorder()
+10:32:58.929 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/toEdit.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminClassificationController.toEdit(int,int,java.util.Map<java.lang.String, java.lang.Object>)
+10:32:58.929 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/toList2.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminClassificationController.toList2()
+10:32:58.929 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/classification/getall2.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> priv.jesse.mall.web.admin.AdminClassificationController.listorder2(java.lang.String)
+10:32:58.934 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/toIndex.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminController.toIndex()
+10:32:58.934 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/toIndex2.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminController.toIndex2()
+10:32:58.935 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/login.do],methods=[POST]}" onto public void priv.jesse.mall.web.admin.AdminController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.935 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/toLogin.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminController.toLogin()
+10:32:58.936 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/logout.do]}" onto public void priv.jesse.mall.web.admin.AdminController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.937 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/getTotal.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Integer> priv.jesse.mall.web.admin.AdminOrderController.getTotal()
+10:32:58.938 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/send.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminOrderController.send(int)
+10:32:58.938 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/toList.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminOrderController.toList()
+10:32:58.938 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/list.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Order>> priv.jesse.mall.web.admin.AdminOrderController.listData(int,int)
+10:32:58.941 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/getDetail2.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Order>> priv.jesse.mall.web.admin.AdminOrderController.getDetail2(java.lang.String)
+10:32:58.942 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/order/getDetail.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.OrderItem>> priv.jesse.mall.web.admin.AdminOrderController.getDetail(int)
+10:32:58.946 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/add.do],methods=[POST]}" onto public void priv.jesse.mall.web.admin.AdminProductController.add(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.Double,int,java.lang.String,int,int,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+10:32:58.947 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/update.do],methods=[POST]}" onto public void priv.jesse.mall.web.admin.AdminProductController.update(int,java.lang.String,java.lang.Double,java.lang.String,int,int,int,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+10:32:58.947 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/getTotal]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Integer> priv.jesse.mall.web.admin.AdminProductController.getTotal()
+10:32:58.948 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/toList.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminProductController.toList()
+10:32:58.948 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/toAdd.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminProductController.toAdd()
+10:32:58.949 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/del.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminProductController.del(int)
+10:32:58.949 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/toEdit.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminProductController.toEdit(int,java.util.Map<java.lang.String, java.lang.Object>)
+10:32:58.949 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/list.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.admin.AdminProductController.listProduct(int,int)
+10:32:58.951 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/product/img/{filename:.+}],methods=[GET]}" onto public void priv.jesse.mall.web.admin.AdminProductController.getImage(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.952 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/update.do],methods=[POST]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminUserController.update(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+10:32:58.954 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/toList.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminUserController.toList()
+10:32:58.954 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/del.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.admin.AdminUserController.del(int)
+10:32:58.955 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/toEdit.html]}" onto public java.lang.String priv.jesse.mall.web.admin.AdminUserController.toEdit(int,java.util.Map<java.lang.String, java.lang.Object>)
+10:32:58.955 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/list.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.User>> priv.jesse.mall.web.admin.AdminUserController.findAllUser(int,int)
+10:32:58.956 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/admin/user/getTotal.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Integer> priv.jesse.mall.web.admin.AdminUserController.geTotal()
+10:32:58.956 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/]}" onto public java.lang.String priv.jesse.mall.web.user.IndexController.index()
+10:32:58.956 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/index.html]}" onto public java.lang.String priv.jesse.mall.web.user.IndexController.toIndex()
+10:32:58.958 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/submit.do]}" onto public void priv.jesse.mall.web.user.OrderController.submit(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+10:32:58.958 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/receive.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.user.OrderController.receive(int,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.959 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/pay.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.user.OrderController.pay(int,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.959 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/list.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Order>> priv.jesse.mall.web.user.OrderController.listData(javax.servlet.http.HttpServletRequest)
+10:32:58.959 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/haha.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<priv.jesse.mall.entity.pojo.Detail> priv.jesse.mall.web.user.OrderController.getDetail2(int)
+10:32:58.960 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/getDetail.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<priv.jesse.mall.entity.pojo.Detail> priv.jesse.mall.web.user.OrderController.getDetail(int) throws java.text.ParseException
+10:32:58.960 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/hot.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.OrderController.getHotProduct()
+10:32:58.960 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/order/toList.html]}" onto public java.lang.String priv.jesse.mall.web.user.OrderController.toOrderList()
+10:32:58.964 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/level.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getHotProductbylevel(java.lang.String)
+10:32:58.971 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/categorySec.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getCategorySecProduct(int,int,int)
+10:32:58.973 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/category.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getCategoryProduct(int,int,int)
+10:32:58.974 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/listCart.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.OrderItem>> priv.jesse.mall.web.user.ProductController.listCart(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+10:32:58.976 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/hot.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getHotProduct()
+10:32:58.977 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/get.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<priv.jesse.mall.entity.Product> priv.jesse.mall.web.user.ProductController.getProduct(int,javax.servlet.http.HttpServletRequest)
+10:32:58.977 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/toCart.html]}" onto public java.lang.String priv.jesse.mall.web.user.ProductController.toCart()
+10:32:58.978 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/getCategorySec.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Classification>> priv.jesse.mall.web.user.ProductController.getCategorySec(int)
+10:32:58.979 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/new.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getNewProduct(int,int)
+10:32:58.979 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/delCart.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.user.ProductController.delToCart(int,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+10:32:58.981 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/get.html]}" onto public java.lang.String priv.jesse.mall.web.user.ProductController.toProductPage(int,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest)
+10:32:58.981 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/category2.html]}" onto public java.lang.String priv.jesse.mall.web.user.ProductController.toCatePage2(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+10:32:58.981 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/addCart.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.user.ProductController.addToCart(int,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+10:32:58.982 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/category.html]}" onto public java.lang.String priv.jesse.mall.web.user.ProductController.toCatePage(int,java.util.Map<java.lang.String, java.lang.Object>)
+10:32:58.982 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/product/chaxun]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.util.List<priv.jesse.mall.entity.Product>> priv.jesse.mall.web.user.ProductController.getNewProductone(java.lang.String)
+10:32:58.986 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/register.do]}" onto public void priv.jesse.mall.web.user.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.987 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/error.html]}" onto public java.lang.String priv.jesse.mall.web.user.UserController.error(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+10:32:58.987 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/login.do]}" onto public void priv.jesse.mall.web.user.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.988 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/toLogin.html]}" onto public java.lang.String priv.jesse.mall.web.user.UserController.toLogin()
+10:32:58.988 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/logout.do]}" onto public void priv.jesse.mall.web.user.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:32:58.988 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/checkUsername.do]}" onto public priv.jesse.mall.entity.pojo.ResultBean<java.lang.Boolean> priv.jesse.mall.web.user.UserController.checkUsername(java.lang.String)
+10:32:58.989 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/user/toRegister.html]}" onto public java.lang.String priv.jesse.mall.web.user.UserController.toRegister()
+10:32:58.990 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:32:58.990 INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry 543 register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:32:59.039 INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping 362 registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:32:59.040 INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping 362 registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:32:59.057 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver 273 initExceptionHandlerAdviceCache - Detected @ExceptionHandler methods in globalExceptionHandler
+10:32:59.088 INFO  org.springframework.web.servlet.handler.AbstractUrlHandlerMapping 362 registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:33:00.287 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+10:33:00.434 INFO  org.springframework.jmx.export.MBeanExporter 431 afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+10:33:00.436 INFO  org.springframework.jmx.export.MBeanExporter 916 autodetect - Bean with name 'statFilter' has been autodetected for JMX exposure
+10:33:00.436 INFO  org.springframework.jmx.export.MBeanExporter 916 autodetect - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:33:00.442 INFO  org.springframework.jmx.export.MBeanExporter 671 registerBeanInstance - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+10:33:00.444 INFO  org.springframework.jmx.export.MBeanExporter 671 registerBeanInstance - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+10:33:00.460 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Initializing ProtocolHandler ["http-nio-80"]
+10:33:00.482 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Starting ProtocolHandler ["http-nio-80"]
+10:33:00.496 ERROR org.apache.juli.logging.DirectJDKLog 181 log - Failed to start end point associated with ProtocolHandler ["http-nio-80"] java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_181]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at priv.jesse.mall.MallApplication.main(MallApplication.java:27) [mall.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+
+10:33:00.503 ERROR org.apache.juli.logging.DirectJDKLog 181 log - Failed to start connector [Connector[HTTP/1.1-80]] org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at priv.jesse.mall.MallApplication.main(MallApplication.java:27) [mall.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 18 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_181]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 18 more
+
+10:33:00.511 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Pausing ProtocolHandler ["http-nio-80"]
+10:33:00.512 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Stopping service [Tomcat]
+10:33:00.526 INFO  org.apache.juli.logging.DirectJDKLog 179 log - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+10:33:00.527 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Stopping ProtocolHandler ["http-nio-80"]
+10:33:00.527 INFO  org.apache.juli.logging.DirectJDKLog 179 log - Destroying ProtocolHandler ["http-nio-80"]
+10:33:00.533 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer 101 logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:33:00.538 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 42 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+10:33:00.540 INFO  org.springframework.context.support.AbstractApplicationContext 984 doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158d79f7: startup date [Fri Apr 24 10:32:43 CST 2020]; root of context hierarchy
+10:33:00.542 INFO  org.springframework.jmx.export.MBeanExporter 449 destroy - Unregistering JMX-exposed beans on shutdown
+10:33:00.542 INFO  org.springframework.jmx.support.MBeanRegistrationSupport 241 unregisterBeans - Unregistering JMX-exposed beans
+10:33:00.544 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 548 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:33:00.551 INFO  com.alibaba.druid.pool.DruidDataSource 1658 close - {dataSource-1} closed
